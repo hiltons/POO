@@ -1,0 +1,8 @@
+function aleatorio({ nomes }: { nomes: string[]; }): string {
+    const indice = Math.floor(Math.random() * nomes.length);
+    return nomes[indice];
+}
+
+
+const lista = ["Hilton", "Tavares", "Arruda", "Filho"];
+console.log(aleatorio({ nomes: lista }));
