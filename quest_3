@@ -1,0 +1,10 @@
+function numerotraco(lista: number[]): string {
+    let resultado = '';
+    lista.forEach((numero, indice) => {resultado += numero;
+        if (indice < lista.length - 1) {
+            resultado += '-';
+        }
+    });
+    return resultado;
+}
+console.log(numerotraco([19, 6, 1995, 7, 12, 2003]));
